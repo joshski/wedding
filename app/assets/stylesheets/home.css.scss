@@ -5,10 +5,20 @@
   background-color: #D2327E;
 
 }
+.navbar-nav {
+float: left;
+margin: 0;
+font-weight: 900;
+font-family: cursive;
+font-size: 1.2em;
+}
 .big-logo-row{
   background: white;
 }
 .home{
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+color: #D229ED;
 }
 img{
   border-radius:2px;
@@ -42,19 +52,43 @@ body {
 .small-logo {
   padding-left: 30px;
 }
+.small-logo-img-a {
+  width: 130px;
+  padding-top: 5px;
+  margin: auto;
+  margin-left: 10%;
+}
 .logo{
   padding:20px;
   background:white;
 }
-
+.navbar-header{
+  & .small-logo-container{
+    width:130px;
+    display:inline-block;
+    margin:auto;
+  }
+  & .small-logo{
+    padding-left:30px;
+    width:130px;
+  }
+}
 .fullsize{
   width:100%;
   min-height:100%;
+  position:relative;
   padding-top:50px;
 }
-#proposal{
-  background:white;
+#home {
+}
+#proposal {
+&.big-logo-row{
+  margin-bottom:20px;
 
+}
+&.fullsize{
+  padding-top:0px;
+}
 }
 #rsvp{
   background:white;
@@ -83,16 +117,17 @@ body {
   color:white;
   text-shadow: 1px 1px #CF87A9;
   padding-left: 60px;
-padding-right: 60px;
-border-radius:2px;
+  padding-right: 60px;
+  border-radius:2px;
 }
 
 .carousel-inner {
   margin:auto;
   width: 300px;
   border: 3px dashed rgb(210, 48, 125);
+  margin-bottom:50px;
+  margin-left:15px;
   & img {
-    max-height:50vh;
   }
 }
 .carousel{
@@ -139,10 +174,46 @@ border-radius:2px;
 .navbar-left{
   margin-left:  20px;
 }
+@media all and (min-width: 768px) {
+
+  .navbar-header{
+    & .small-logo-container-h{
+      width:130px;
+      display:none;
+    }
+
+  }
+  .hidden{
+    display:none;
+  }
+}
+
+@media all and (max-width: 768px) {
+
+  #navbarLinks{
+    & .small-logo-container-h{
+      width:130px;
+      display:none;
+    }
+
+  }
+  .navbar-left  {
+    margin:auto;
+  }
+  .navbar-right{
+    margin:auto;
+
+  }
+  .small-logo-container{
+    display:none;
+  }
+}
 @media all and (max-width: 1024px) {
   .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     background: rgba(255, 255, 255, 0.95);
   }
+
+
 }
 @media all and (max-width: 450px) {
   .logo{
