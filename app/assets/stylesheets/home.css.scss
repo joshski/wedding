@@ -9,8 +9,16 @@
 }
 .home{
 }
+img{
+  border-radius:2px;
+}
+.fa-long-arrow-down{
+  font-size:2em;
+  padding:20px;
+}
 body {
   position:relative;
+  text-align:center;
 }
 
 .container-fluid{
@@ -69,9 +77,12 @@ body {
   margin-top:50px;
   margin-bottom:50px;
 
-  background: rgb(255, 232, 243);
+  background: #909DC8;
   color:white;
   text-shadow: 1px 1px #CF87A9;
+  padding-left: 60px;
+padding-right: 60px;
+border-radius:2px;
 }
 
 .carousel-inner {
@@ -120,4 +131,19 @@ body {
   text-align:center;
   color: rgb(232, 174, 202);
   padding-bottom:20px;
+}
+.proposal-images{
+  max-width:900px;
+  padding-top: 50px;
+  margin:auto;
+}
+.fa-heart{
+  font-size: 18em;
+  color: rgb(211, 50, 126);
+  padding:20px;
+}
+.young-img{
+  width:300px;
+  height:445px;
+  border-radius:10px;
 }
