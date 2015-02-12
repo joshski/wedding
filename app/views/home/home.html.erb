@@ -1,14 +1,8 @@
- <div class="container-fluid big-logo-row">
-   <div class="container">
-     <div class="row">
-       <div class="col-xs-12 big-logo-container">
-         <h1 class="big-logo"><%=image_tag('logo.png',class:"logo") %></h1>
-       </div><!--/.col-xs-12 -->
-     </div><!--/.row -->
-   </div><!--/.container -->
- </div><!--/.container-fluid -->
+<%= render :partial => 'layouts/big_logo' %>
+
 
 <div id="home" class="container fullsize home">
+  <h1 class="main-title">~Home~</h1>
   <div id="carousels">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
@@ -61,20 +55,31 @@
 
 
 <div id="proposal" class="fullsize">
+  <%= render :partial => 'layouts/big_logo' %>
+
+  <h1 class="main-title">~The Proposal~</h1>
 
 </div>
 
 <div id="rsvp" class="fullsize">
+  <%= render :partial => 'layouts/big_logo' %>
 
+  <h1 class="main-title">~RSVP~</h1>
 </div>
 
 <div id="gifts" class="fullsize">
+  <%= render :partial => 'layouts/big_logo' %>
 
+  <h1 class="main-title">~Gifts~</h1>
 </div>
 
 <div id="insta" class="fullsize">
+  <%= render :partial => 'layouts/big_logo' %>
 
+  <h1 class="main-title">~Instagram~</h1>
 </div>
 <div id="gallery" class="fullsize">
+  <%= render :partial => 'layouts/big_logo' %>
 
+  <h1 class="main-title">~Gallery~</h1>
 </div>
