@@ -73,9 +73,7 @@ background: rgb(255, 232, 243);
 color:white;
 text-shadow: 1px 1px #CF87A9;
 }
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-background: rgba(255, 255, 255, 0.95);
-}
+
 .carousel-inner {
   margin:auto;
   width: 300px;
@@ -92,11 +90,17 @@ background: rgba(255, 255, 255, 0.95);
   max-width:950px;
   margin:auto;
 }
+@media all and (max-width: 1024px) {
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  background: rgba(255, 255, 255, 0.95);
+  }
+}
 @media all and (max-width: 450px) {
   .logo{
     width:70%
   }
 }
+
 .navbar-inverse .navbar-nav > li > a {
 color: rgb(210, 50, 126);
 border: 1px dotted #F5DAE7;
