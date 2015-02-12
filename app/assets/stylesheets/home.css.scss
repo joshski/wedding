@@ -7,3 +7,25 @@
 .big-logo-row{
   background: white;
 }
+.home{
+}
+body {
+}
+
+.container-fluid{
+  background-image:image-url('strip.png');
+  background-size: 100% 900%;
+  background-repeat: no-repeat;
+}
+.navbar-inverse .navbar-toggle {
+border: 1px solid #333;
+border-color: rgba(210, 50, 126, 1);
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  border-color: rgba(210, 50, 126, 1);
+  background-color: rgba(210, 50, 126, 1);
+
+}
+.small-logo {
+  padding-left: 30px;
+}
