@@ -21,6 +21,9 @@ body {
 .navbar-inverse .navbar-toggle {
 border: 1px solid #333;
 border-color: rgba(210, 50, 126, 1);
+&:hover {
+  background:white;
+}
 }
 .navbar-inverse .navbar-toggle .icon-bar {
   border-color: rgba(210, 50, 126, 1);
@@ -64,9 +67,14 @@ border-color: rgba(210, 50, 126, 1);
   max-width: 800px;
 margin: auto;
 margin-top:50px;
+margin-bottom:50px;
+
 background: rgb(255, 232, 243);
 color:white;
 text-shadow: 1px 1px #CF87A9;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+background: rgba(255, 255, 255, 0.95);
 }
 .carousel-inner {
   margin:auto;
@@ -83,4 +91,14 @@ text-shadow: 1px 1px #CF87A9;
   display:block;
   max-width:950px;
   margin:auto;
+}
+@media all and (max-width: 450px) {
+  .logo{
+    width:70%
+  }
+}
+.navbar-inverse .navbar-nav > li > a {
+color: rgb(210, 50, 126);
+border: 1px dotted #F5DAE7;
+
 }
