@@ -36,8 +36,11 @@ body {
 }
 
 .container-fluid{
-  background: repeating-linear-gradient(34deg, white, white 10px, #D3337F 10px, #D3337F 20px);
-  background-size: 100% 100%;
+  background: -webkit-linear-gradient(-45deg, #fff 25%,
+  rgb(245, 218, 231) 25%, rgb(245, 218, 231) 50%,
+    #fff 50%, #fff 75%,
+    rgb(245, 218, 231) 75%);
+  background-size:100px 100px;
 }
 .navbar-inverse .navbar-toggle {
   border: 1px solid #333;
