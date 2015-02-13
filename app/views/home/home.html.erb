@@ -101,6 +101,14 @@
       <%= render :partial => 'layouts/big_logo' %>
 
       <h1 class="main-title">~Song Request~</h1>
+      <%= form_for(@song_request) do |f| %>
+      <%= f.text_area :name, placeholder: "Your Name..." %>
+      <%= f.text_area :song_name, placeholder: "Song Name...." %>
+      <%= f.text_area :content, placeholder: "Anything else?" %>
+  </div>
+  <%= f.submit "Post", class: "btn btn-primary" %>
+<% end %>
+
     </div>
 
     <div id="gifts" class="fullsize">
