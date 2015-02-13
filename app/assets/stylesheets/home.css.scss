@@ -3,36 +3,35 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
 @font-face {
-   font-family: 'eurostile';
-    src:asset-url('Eurostile.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'eurostile';
+  src:asset-url('Eurostile.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-   font-family: 'futura';
-    src:asset-url('Futura.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'futura';
+  src:asset-url('Futura.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-   font-family: 'gillsans';
-    src:asset-url('GillSans.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'gillsans';
+  src:asset-url('GillSans.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-   font-family: 'gill';
-    src:asset-url('Gill.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'gill';
+  src:asset-url('Gill.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 @font-face {
-   font-family: 'gotham';
-    src:asset-url('Gotham-Ultra.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'gotham';
+  src:asset-url('Gotham-Ultra.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
@@ -40,11 +39,11 @@
 
 }
 .navbar-nav {
-float: left;
-margin: 0;
-font-weight: 900;
-font-family: cursive;
-font-size: 1.2em;
+  float: left;
+  margin: 0;
+  font-weight: 900;
+  font-family: cursive;
+  font-size: 1.2em;
 }
 .big-logo-row{
   background: white;
@@ -52,7 +51,7 @@ font-size: 1.2em;
 .home{
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-color: #D229ED;
+  color: #D229ED;
 }
 img{
   border-radius:2px;
@@ -71,8 +70,8 @@ body {
 
 .container-fluid{
   background: -webkit-linear-gradient(-45deg, white 25%, #f5dae7 25%, #f5dae7 50%, white 50%, white 75%, #f5dae7 75%);
-background-size: 100px 100px;
-min-height: 330px;
+  background-size: 100px 100px;
+  min-height: 330px;
 }
 .first .container-fluid{
   position:relative;
@@ -123,13 +122,13 @@ min-height: 330px;
 #home {
 }
 #proposal {
-&.big-logo-row{
-  margin-bottom:20px;
+  &.big-logo-row{
+    margin-bottom:20px;
 
-}
-&.fullsize{
-  padding-top:0px;
-}
+  }
+  &.fullsize{
+    padding-top:0px;
+  }
 }
 #rsvp{
   background:white;
@@ -216,85 +215,16 @@ min-height: 330px;
 .navbar-left{
   margin-left:  20px;
 }
-@media all and (min-width: 768px) {
-
-  .navbar-header{
-    & .small-logo-container-h{
-      width:130px;
-      display:none;
-    }
-
-  }
-  .hidden{
-    display:none;
-  }
-}
-
-@media all and (max-width: 768px) {
-
-  #navbarLinks{
-    & .small-logo-container-h{
-      width:130px;
-      display:none;
-    }
-
-  }
-
-  .navbar-left  {
-    margin:auto;
-  }
-  .navbar-right{
-    margin:auto;
-
-  }
-  .small-logo-container{
-    display:none;
-  }
-  .navbar-nav {
-float: none;
-}
-}
-@media all and (max-width: 1024px) {
-  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    background: rgba(255, 255, 255, 0.95) !important;
-  }
-  .navbar-inverse  {
-    background: rgba(255, 255, 255, 0.95) !important;
-  }
-  .first .big-logo{
-    margin-top:20px;
-  }
-
-}
-@media all and (max-width: 450px) {
 
 
 
 
-
-
-
-  .logo{
-    width:70%
-  }
-  .carousel-inner {
-    margin: auto;
-    width: auto;
-    border: 3px dashed #d2307d;
-
-  }
-  .small-logo-container{
-    display:block;
-  }
-  .carousel-inner img {
-    max-height: inherit;
-  }
-}
 .css-logo{
   text-transform: uppercase;
   margin: auto;
   background: white;
   padding: 15px;
+  max-width: 550px;
 }
 .gemma{
   font-size: 53px;
@@ -327,8 +257,8 @@ float: none;
   height:41px;
   display:inline-block;
   background-size: 35px 41px;
-background-position: center;
-background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
 
 }
 .record{
@@ -339,7 +269,7 @@ background-repeat: no-repeat;
   background-size: 35px 41px;
   background-position: center;
   background-repeat: no-repeat;
-  }
+}
 .getting{
   font-size: 8px;
   color: white;
@@ -352,32 +282,4 @@ background-repeat: no-repeat;
   position: relative;
   top: 50%;
   transform: translateY(-70%);
-}
-@media all and (max-width: 650px) {
-
-    .getting{
-      font-size:5px;
-      width: 50px;
-      height: 18px;
-      transform: translateY(-45%);
-    }
-    .married{
-      font-size:35px;
-    }
-    .lewis{
-      font-size:25px;
-    }
-    .gemma{
-      font-size:25px;
-    }
-    .cupcake {
-  width: 15px;
-  height: 18px;
-  background-size: 15px 18px;
-  }
-  .record {
-  width: 15px;
-  height: 18px;
-  background-size: 15px 18px;
-  }
 }

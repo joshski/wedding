@@ -1,0 +1,125 @@
+@media all and (min-width: 768px) {
+
+  .navbar-header{
+    & .small-logo-container-h{
+      width:130px;
+      display:none;
+    }
+
+  }
+  .hidden{
+    display:none;
+  }
+}
+
+
+
+@media all and (max-width: 1024px) {
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    background: rgba(255, 255, 255, 0.95) !important;
+  }
+  .navbar-inverse  {
+    background: rgba(255, 255, 255, 0.95) !important;
+  }
+  .first .big-logo{
+    margin-top:20px;
+  }
+
+}
+@media all and (max-width: 768px) {
+
+  #navbarLinks{
+    & .small-logo-container-h{
+      width:130px;
+      display:none;
+    }
+
+  }
+
+  .navbar-left  {
+    margin:auto;
+  }
+  .navbar-right{
+    margin:auto;
+
+  }
+  .small-logo-container{
+    display:none;
+  }
+  .navbar-nav {
+    float: none;
+  }
+}
+@media all and (max-width: 650px) {
+  .css-logo{
+    max-width: 300px;
+  }
+  .getting{
+    font-size:5px;
+    width: 50px;
+    height: 18px;
+    transform: translateY(-45%);
+  }
+  .married{
+    font-size:35px;
+  }
+  .lewis{
+    font-size:25px;
+  }
+  .gemma{
+    font-size:25px;
+  }
+  .cupcake {
+    width: 15px;
+    height: 18px;
+    background-size: 15px 18px;
+  }
+  .record {
+    width: 15px;
+    height: 18px;
+    background-size: 15px 18px;
+  }
+}
+
+@media all and (max-width: 450px) {
+  .logo{
+    width:70%
+  }
+  .carousel-inner {
+    margin: auto;
+    width: auto;
+    border: 3px dashed #d2307d;
+
+  }
+  .small-logo-container{
+    display:block;
+  }
+  .carousel-inner img {
+    max-height: inherit;
+  }
+  .getting{
+    font-size:4px;
+    width: 45px;
+    height: 16px;
+    transform: translateY(-45%);
+  }
+  .married{
+    font-size:30px;
+  }
+  .lewis{
+    font-size:20px;
+  }
+  .gemma{
+    font-size:20px;
+  }
+  .cupcake {
+    width: 11px;
+    height: 14px;
+    background-size: 11px 14px;
+  }
+  .record {
+    width: 11px;
+    height: 14px;
+    background-size: 11px 14px;
+  }
+}
