@@ -23,6 +23,9 @@ color: #D229ED;
 img{
   border-radius:2px;
 }
+.where-met {
+  width:100%;
+}
 .fa-long-arrow-down{
   font-size:2em;
   padding:20px;
@@ -33,9 +36,8 @@ body {
 }
 
 .container-fluid{
-  background-image:image-url('strip.png');
-  background-size: 100% 900%;
-  background-repeat: no-repeat;
+  background: repeating-linear-gradient(34deg, white, white 10px, #D3337F 10px, #D3337F 20px);
+  background-size: 100% 100%;
 }
 .navbar-inverse .navbar-toggle {
   border: 1px solid #333;
@@ -135,7 +137,7 @@ body {
 }
 #carousels{
   display:block;
-  max-width:950px;
+  max-width:1000px;
   margin:auto;
 }
 
