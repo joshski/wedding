@@ -24,27 +24,6 @@ $(function() {
     count: 100,
     color: ["#ff0080","#ff0080","#3901FF"]
   });
-
-  $("p").sparkleh({
-    count: 100,
-    color: "#00ff00",
-    speed: 0.5
-  });
-
-
-  // an array can be passed, too for colours
-  // for an image, the image needs to be fully loaded to set
-  // the canvas to it's height/width.
-  // speed allows us to control... the ... velocity
-  $("img").imagesLoaded( function() {
-    $("img").sparkleh({
-      count: 25,
-      color: ["#00afec","#fb6f4a","#fdfec5"],
-    speed: 0.4
-    });
-  });
-
-
 });
 
 
