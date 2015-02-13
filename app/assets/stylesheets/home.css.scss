@@ -74,6 +74,10 @@ body {
 background-size: 100px 100px;
 min-height: 330px;
 }
+.first .container-fluid{
+  position:relative;
+
+}
 .navbar-inverse .navbar-toggle {
   border: 1px solid #333;
   border-color: rgba(210, 50, 126, 1);
