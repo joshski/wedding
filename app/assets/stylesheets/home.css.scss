@@ -1,6 +1,35 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+@font-face {
+   font-family: 'eurostile';
+    src:asset-url('Eurostile.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+   font-family: 'futura';
+    src:asset-url('Futura.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+   font-family: 'gill';
+    src:asset-url('GillSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+   font-family: 'gotham';
+    src:asset-url('Gotham-ultra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
   background-color: #D2327E;
 
@@ -127,11 +156,12 @@ body {
 }
 
 .carousel-inner {
-  margin:auto;
+  margin: auto;
   width: 300px;
-  border: 3px dashed rgb(210, 48, 125);
-  margin-bottom:50px;
-  margin-left:15px;
+  border: 10px dashed #F5DAE7;
+  margin-bottom: 50px;
+  margin-left: 15px;
+  border-radius: 5px;
   & img {
   }
 }
@@ -243,3 +273,56 @@ float: none;
     max-height: inherit;
   }
 }
+.css-logo{
+  text-transform: uppercase;
+  width: 420px;
+  height: 200px;
+  margin: auto;
+  background: red;
+  padding: 15px;
+}
+.gemma{
+  font-size: 45px;
+  color: rgb(246, 213, 225);
+  text-shadow: 1px 4px #021851;
+  font-family:gillsans;
+  font-weight: 600;
+
+}
+.lewis{
+  font-size:45px;
+  color:rgb(2, 24, 81);
+  font-family:eurostile;
+
+
+}
+.and{
+  font-size:16px;
+  color:rgb(48, 67, 110)
+
+}
+.married{
+  font-size:57px;
+  color:rgb(210, 50, 126);
+  font-family:eurostile;
+
+
+}
+.cupcake{
+  background-image:image-url("cupcake.png");
+  width:35px;
+  height:41px;
+  display:inline-block;
+  background-size: 35px 41px;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+.record{
+  background-image:image-url("record.png");
+  width:35px;
+  height:41px;
+  display:inline-block;
+  background-size: 35px 41px;
+  background-position: center;
+  background-repeat: no-repeat;}
