@@ -6,5 +6,5 @@ window.smoothScroll = function(link) {
   if ($('header').css('position') === 'fixed'){
     scrollTo -= 51;
   }
-  $('html, body').animate({ scrollTop: scrollTo},500);
+  $('html, body').animate({ scrollTop: scrollTo},800);
 };
