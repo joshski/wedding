@@ -12,16 +12,16 @@ $(function() {
 
   // here we create fuscia sparkles
   $("h1").sparkleh({
-    count: 80,
+    count: 20,
     color: ["#ff0080","#ff0080","#0000FF"]
   });
   $(".css-logo").sparkleh({
-    count: 80,
+    count: 100,
     color: ["#ff0080","#ff0080","#0000FF"]
   });
 
   $(".big-logo-row").sparkleh({
-    count: 80,
+    count: 100,
     color: ["#ff0080","#ff0080","#3901FF"]
   });
 

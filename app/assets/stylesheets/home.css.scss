@@ -18,7 +18,7 @@
 }
 @font-face {
    font-family: 'gillsans';
-    src:asset-url('GillSans.ttf') format('truetype');
+    src:asset-url('GillSans.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -261,9 +261,19 @@ float: none;
   .navbar-inverse  {
     background: rgba(255, 255, 255, 0.95) !important;
   }
+  .first .big-logo{
+    margin-top:20px;
+  }
 
 }
 @media all and (max-width: 450px) {
+
+
+
+
+
+
+
   .logo{
     width:70%
   }
@@ -282,14 +292,12 @@ float: none;
 }
 .css-logo{
   text-transform: uppercase;
-  width: 500px;
-  height: 240px;
   margin: auto;
   background: white;
   padding: 15px;
 }
 .gemma{
-  font-size: 58px;
+  font-size: 53px;
   color: rgb(246, 213, 225);
   text-shadow: 1px 4px #021851;
   font-family:gillsans;
@@ -344,4 +352,32 @@ background-repeat: no-repeat;
   position: relative;
   top: 50%;
   transform: translateY(-70%);
+}
+@media all and (max-width: 650px) {
+
+    .getting{
+      font-size:5px;
+      width: 50px;
+      height: 18px;
+      transform: translateY(-45%);
+    }
+    .married{
+      font-size:35px;
+    }
+    .lewis{
+      font-size:25px;
+    }
+    .gemma{
+      font-size:25px;
+    }
+    .cupcake {
+  width: 15px;
+  height: 18px;
+  background-size: 15px 18px;
+  }
+  .record {
+  width: 15px;
+  height: 18px;
+  background-size: 15px 18px;
+  }
 }
