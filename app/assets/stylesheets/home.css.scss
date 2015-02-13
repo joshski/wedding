@@ -17,18 +17,23 @@
     font-style: normal;
 }
 @font-face {
-   font-family: 'gill';
+   font-family: 'gillsans';
     src:asset-url('GillSans.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-   font-family: 'gotham';
-    src:asset-url('Gotham-ultra.ttf') format('truetype');
+   font-family: 'gill';
+    src:asset-url('Gill.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+   font-family: 'gotham';
+    src:asset-url('Gotham-Ultra.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
   background-color: #D2327E;
@@ -275,14 +280,14 @@ float: none;
 }
 .css-logo{
   text-transform: uppercase;
-  width: 420px;
-  height: 200px;
+  width: 500px;
+  height: 240px;
   margin: auto;
   background: red;
   padding: 15px;
 }
 .gemma{
-  font-size: 45px;
+  font-size: 58px;
   color: rgb(246, 213, 225);
   text-shadow: 1px 4px #021851;
   font-family:gillsans;
@@ -290,11 +295,9 @@ float: none;
 
 }
 .lewis{
-  font-size:45px;
+  font-size:50px;
   color:rgb(2, 24, 81);
   font-family:eurostile;
-
-
 }
 .and{
   font-size:16px;
@@ -302,7 +305,7 @@ float: none;
 
 }
 .married{
-  font-size:57px;
+  font-size:67px;
   color:rgb(210, 50, 126);
   font-family:eurostile;
 
@@ -325,4 +328,18 @@ background-repeat: no-repeat;
   display:inline-block;
   background-size: 35px 41px;
   background-position: center;
-  background-repeat: no-repeat;}
+  background-repeat: no-repeat;
+  }
+.getting{
+  font-size: 8px;
+  color: white;
+  display: inline-block;
+  width: 70px;
+  height: 20px;
+  padding-top: 5px;
+  font-family: futura;
+  background: #30436e;
+  position: relative;
+  top: 50%;
+  transform: translateY(-70%);
+}
