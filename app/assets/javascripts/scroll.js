@@ -7,4 +7,6 @@ window.smoothScroll = function(link) {
     scrollTo -= 51;
   }
   $('html, body').animate({ scrollTop: scrollTo},800);
+  $('.navbar-toggle:visible').click();
+  return false;
 };

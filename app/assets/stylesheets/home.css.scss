@@ -34,7 +34,7 @@
   font-style: normal;
 }
 
-h1, .navbar, #rsvp, #gifts, #gallery, #proposal, .center, .jumbotron .center p {
+#first, .main-section {
   text-align: center;
 }
 
@@ -59,7 +59,7 @@ h1 {
 .home{
 }
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-  color: #D229ED;
+  color: #B02C6B;
 }
 img{
   border-radius:2px;
@@ -122,6 +122,9 @@ body {
   padding:20px;
   background:white;
 }
+.navbar {
+  text-align: center;
+}
 .navbar-header{
   & .small-logo-container{
     width:130px;
@@ -159,8 +162,6 @@ body {
   padding-right: 60px;
   border-radius:2px;
   p {
-    text-align: left;
-    max-width: 640px;
     margin: auto;
     margin-top: 30px;
   }
@@ -300,10 +301,17 @@ body {
 
 #songs form .field {
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 #songs input, #songs textarea {
   width: 100%;
+  border: 1px solid #E8AECA;
+}
+
+#songs input[type=submit] {
+  border: none;
+  margin-top: 20px;
 }
 
 #songs label {
@@ -352,4 +360,12 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+  .container-fluid {
+    min-height: 220px;
+    margin-top: 50px;
+  }
+}
+
+.navbar-nav > .active > a:focus {
+  background-color: transparent;
 }
