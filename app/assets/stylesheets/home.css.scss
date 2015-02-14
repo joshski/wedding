@@ -80,7 +80,7 @@ body {
 }
 
 .main-section {
-  background: -webkit-linear-gradient(-45deg, white 25%, #f5dae7 25%, #f5dae7 50%, white 50%, white 75%, #f5dae7 75%);
+  background: linear-gradient(-45deg, white 25%, #f5dae7 25%, #f5dae7 50%, white 50%, white 75%, #f5dae7 75%);
   background-size: 100px 100px;
   background-repeat: repeat-x;
   margin-top: 30px;
@@ -89,7 +89,7 @@ body {
 }
 
 .container-fluid{
-  background: -webkit-linear-gradient(-45deg, white 25%, #f5dae7 25%, #f5dae7 50%, white 50%, white 75%, #f5dae7 75%);
+  background: linear-gradient(-45deg, white 25%, #f5dae7 25%, #f5dae7 50%, white 50%, white 75%, #f5dae7 75%);
   background-size: 100px 100px;
   min-height: 330px;
 }
