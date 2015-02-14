@@ -282,3 +282,26 @@ body {
   top: 50%;
   transform: translateY(-70%);
 }
+
+#rsvp ul {
+  list-style-type: none;
+}
+
+#songs form {
+  width: 250px;
+  margin: auto;
+}
+
+#songs form .field {
+  margin-bottom: 10px;
+}
+
+
+#songs input, #songs textarea {
+  width: 100%;
+}
+
+#songs label {
+  display: block;
+  text-align: left;
+}

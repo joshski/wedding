@@ -1,7 +1,9 @@
 <div class="first">
+  <% if flash[:notice] %>
+    <div id="notice"><%= flash[:notice] %></div>
+  <% end %>
   <%= render :partial => 'layouts/big_logo' %>
 </div>
-
 
 <div id="home" class="container fullsize home">
   <h1 class="main-title">~Home~</h1>
@@ -9,120 +11,160 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <%= image_tag ("Photo1.jpg"),class:"" %>
+          <%= image_tag ("Photo1.jpg") %>
         </div>
         <div class="item">
-          <%= image_tag ("Photo2.jpg"),class:"" %>
+          <%= image_tag ("Photo2.jpg") %>
         </div>
         <div class="item">
-          <%= image_tag ("Photo3.jpg"),class:"" %>
+          <%= image_tag ("Photo3.jpg") %>
         </div>
       </div>
     </div>
     <div id="myCarousel1" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <%= image_tag ("Photo4.jpg"),class:"" %>
+          <%= image_tag ("Photo4.jpg") %>
         </div>
         <div class="item">
-          <%= image_tag ("Photo5.jpg"),class:"" %>
+          <%= image_tag ("Photo5.jpg") %>
         </div>
         <div class="item">
-          <%= image_tag ("Photo6.jpg"),class:"" %>
+          <%= image_tag ("Photo6.jpg") %>
         </div>
       </div>
     </div>
     <div id="myCarousel2" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <%= image_tag ("Photo7.jpg"),class:"" %>
+          <%= image_tag ("Photo7.jpg") %>
         </div>
         <div class="item">
-          <%= image_tag ("Photo8.jpg"),class:"" %>
+          <%= image_tag ("Photo8.jpg") %>
         </div>
         <div class="item">
-          <%= image_tag ("Photo9.jpg"),class:"" %>
+          <%= image_tag ("Photo9.jpg") %>
         </div>
       </div>
     </div>
   </div>
-
   <div class="jumbotron">
     <h1>We're getting married!</h1>
-    <p>Hello & welcome to our wedding site.
-      After seven years together, we are extremely excited to be planning our wedding. We have some wonderful friends and family, and hope that you will be able to join us.
-      If you haven't already, please try to RSVP as soon as you can as this will help us with our planning.</p>
-    </div>
-  </div>
-
-
-  <div id="proposal" class="fullsize">
-    <%= render :partial => 'layouts/big_logo' %>
-    <h1 class="main-title">~The Proposal~</h1>
-    <div class="proposal-images">
-      <%= image_tag ("Photo10.jpg"),class:"young-img" %>
-      <div class="" style="display:inline-block;">
-        <i class="fa fa-heart"></i>
-      </div>
-      <%= image_tag ("Photo11.jpg"),class:"young-img" %>
-    </div>
-    <div class="jumbotron">
-      <h1>Lewis</h1>
-      <p>Lewis proposed to Gemma in Cape Town on Signal Hill. This is otherwise known as the 'Lion's Rump'. Take a look at the picture below and you'll see what we mean. It is quite apt considering they are both Leos. </p>
-      <p>
-        Lewis chose Cape Town because in the city.  Her parents also live there. Lewis woke Gemma up on the day having told her to expect a day trip surprise. The first stop on the magical mystery tour was the top of Signal Hill for amazing views and Paraglider spotting. Having had our fill we started to drive down Signal Hill, only for Lewis to pull over on the side of the mountain so we could (apparently) look at more views of the city. After getting out the car (and following a quick warning from Gemma not to fall off the cliff) and with her favourite place in the world as a backdrop, Lewis asked Gemma to marry him (then pulled out the ring, got down on one knee, and asked again). Cue lots of nervous laughing from Gemma and a huge YES (and kiss) followed by a cheeky photo of Lewis down on one knee (got to capture the moment).
-      </p>
-      <p>
-        Lew proposed here!<br>
-        <i class="fa fa-long-arrow-down"></i>
-      </p>
-      <%= image_tag ("lewismet.png"), class:"where-met" %>
-    </div>
-
-  </div>
-
-  <div id="rsvp" class="fullsize">
-    <%= render :partial => 'layouts/big_logo' %>
-    <h1 class="main-title">~RSVP~</h1>
-    <p>Please RSVP as soon as possible to: <a href="mailto:gemmaandlewis@outlook.com">gemmaandlewis@outlook.com</a></p>
-
     <p>
-      Let us know:</p>
-
-      <p>&bull; Any dietary requirements you have.</p>
-
-      <p>&bull; Whether you favour red or white wine (or don&rsquo;t really care).</p>
-
-      <p>&bull; If you expect NOT to be drinking any alcohol.<br>
-      </p>
-    </div>
-
-    <div id="songs" class="fullsize">
-      <%= render :partial => 'layouts/big_logo' %>
-
-      <h1 class="main-title">~Song Request~</h1>
-      <%= form_for(@song_request) do |f| %>
-      <%= f.text_area :name, placeholder: "Your Name..." %>
-      <%= f.text_area :song_name, placeholder: "Song Name...." %>
-      <%= f.text_area :content, placeholder: "Anything else?" %>
+      Hello &amp; welcome to our wedding site.
+      After seven years together, we are extremely excited to be planning our
+      wedding. We have some wonderful friends and family, and hope that you will
+      be able to join us. If you haven't already, please try to RSVP as soon as
+      you can as this will help us with our planning.
+    </p>
   </div>
-  <%= f.submit "Post", class: "btn btn-primary" %>
-<% end %>
+</div>
 
+<div id="proposal" class="fullsize">
+  <%= render :partial => 'layouts/big_logo' %>
+  <h1 class="main-title">~The Proposal~</h1>
+  <div class="proposal-images">
+    <%= image_tag ("Photo10.jpg"),class:"young-img" %>
+    <div class="" style="display:inline-block;">
+      <i class="fa fa-heart"></i>
     </div>
+    <%= image_tag ("Photo11.jpg"),class:"young-img" %>
+  </div>
+  <div class="jumbotron">
+    <h1>Lewis</h1>
+    <p>
+      Lewis proposed to Gemma in Cape Town on Signal Hill. This is otherwise
+      known as the 'Lion's Rump'. Take a look at the picture below and you'll
+      see what we mean. It is quite apt considering they are both Leos.
+    <p>
+      Lewis chose Cape Town because in the city. Her parents also live there.
+      Lewis woke Gemma up on the day having told her to expect a day trip
+      surprise. The first stop on the magical mystery tour was the top of
+      Signal Hill for amazing views and Paraglider spotting. Having had our fill
+      we started to drive down Signal Hill, only for Lewis to pull over on the
+      side of the mountain so we could (apparently) look at more views of the
+      city. After getting out the car (and following a quick warning from Gemma
+      not to fall off the cliff) and with her favourite place in the world as a
+      backdrop, Lewis asked Gemma to marry him (then pulled out the ring, got
+      down on one knee, and asked again). Cue lots of nervous laughing from
+      Gemma and a huge YES (and kiss) followed by a cheeky photo of Lewis down
+      on one knee (got to capture the moment).
+    </p>
+    <p>
+      Lew proposed here!<br>
+      <i class="fa fa-long-arrow-down"></i>
+    </p>
+    <%= image_tag ("lewismet.png"), class:"where-met" %>
+  </div>
+</div>
+<div id="rsvp" class="fullsize">
+  <%= render :partial => 'layouts/big_logo' %>
+  <h1 class="main-title">~RSVP~</h1>
+  <p>
+    Please RSVP as soon as possible to:
+    <a href="mailto:gemmaandlewis@outlook.com">gemmaandlewis@outlook.com</a>
+  </p>
+  <p>
+    Let us know:
+  </p>
+  <ul>
+    <li>Any dietary requirements you have</li>
+    <li>Whether you favour red or white wine (or don&rsquo;t really care).</li>
+    <li>If you expect NOT to be drinking any alcohol.</li>
+  </ul>
+</div>
 
-    <div id="gifts" class="fullsize">
-      <%= render :partial => 'layouts/big_logo' %>
+<div id="songs" class="fullsize">
+  <%= render :partial => 'layouts/big_logo' %>
+  <h1 class="main-title">~Song Request~</h1>
+  <div id="song_request_thanks" style="display:none">
+    <h3>
+      Thanks <span id="song_request_thanks_name"></span>...
+      <span id="song_request_thanks_song">your song</span> is on the list!
+    </h3>
+    <p>
+      You can request as many songs as you like...
+    </p>
+  </div>
+  <%= form_for @song_request, remote:true do |f| %>
+    <div class="field">
+      <%= f.label :name, "Your Name" %>
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :song_name, "Song Title" %>
+      <%= f.text_area :song_name %>
+    </div>
+    <div class="field">
+      <%= f.label :content, "Anything else?" %>
+      <%= f.text_area :content %>
+    </div>
+    <div>
+      <%= f.submit "Send Song Request", class: "btn btn-primary" %>
+    </div>
+  <% end %>
+</div>
 
-      <h1 class="main-title">~Gifts~</h1>
-      <p>
-        We are just happy you are going to be coming to celebrate our marriage with us, but if you would like to get us a gift we have put together a list of ideas below. We have also opened a John Lewis giftlist for those who prefer something more tangible.
-      </p>
-      <p>
-        —Product list with the ability to select and pay for any of the gifts - connecting to our Paypal account (djbase666@yahoo.com). Buyers need the opportunity (optional) to put their name & a message with their gift purchase. In all cases EXCEPT a honeymoon donation, the item should disappear from the product list (in a similar way to how a retail website would work once stock is sold out)-
-      </p>
-      <p>
-        •	Honeymoon Donation (User specifies the amount. If user specification is not possible then perhaps there will need to be a series of 'products' with different donation amounts, such as:
+<div id="gifts" class="fullsize">
+  <%= render :partial => 'layouts/big_logo' %>
+  <h1 class="main-title">~Gifts~</h1>
+  <p>
+    We are just happy you are going to be coming to celebrate our marriage with
+    us, but if you would like to get us a gift we have put together a list of
+    ideas below. We have also opened a John Lewis giftlist for those who prefer
+    something more tangible.
+  </p>
+  <p>
+    —Product list with the ability to select and pay for any of the gifts -
+    connecting to our Paypal account (djbase666@yahoo.com). Buyers need the
+    opportunity (optional) to put their name &amp; a message with their gift
+    purchase. In all cases EXCEPT a honeymoon donation, the item should
+    disappear from the product list (in a similar way to how a retail website
+    would work once stock is sold out)-
+  </p>
+  <p>
+    •	Honeymoon Donation (User specifies the amount. If user specification is
+    not possible then perhaps there will need to be a series of 'products' with different donation amounts, such as:
         •	Honeymoon Donation (£10)
         •	Honeymoon Donation (£20)
         •	Honeymoon Donation (£30)
@@ -139,15 +181,14 @@
         •	Nice meal on first night of honeymoon (£75)
 
       </p>
-    </div>
+</div>
 
-    <div id="insta" class="fullsize">
-      <%= render :partial => 'layouts/big_logo' %>
+<div id="insta" class="fullsize">
+  <%= render :partial => 'layouts/big_logo' %>
+  <h1 class="main-title">~Instagram~</h1>
+</div>
 
-      <h1 class="main-title">~Instagram~</h1>
-    </div>
-    <div id="gallery" class="fullsize">
-      <%= render :partial => 'layouts/big_logo' %>
-
-      <h1 class="main-title">~Gallery~</h1>
-    </div>
+<div id="gallery" class="fullsize">
+  <%= render :partial => 'layouts/big_logo' %>
+  <h1 class="main-title">~Gallery~</h1>
+</div>
