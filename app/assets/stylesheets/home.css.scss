@@ -67,6 +67,13 @@ body {
   position:relative;
   text-align:center;
 }
+.main-section {
+  background: -webkit-linear-gradient(-45deg, white 25%, #f5dae7 25%, #f5dae7 50%, white 50%, white 75%, #f5dae7 75%);
+  background-size: 100px 100px;
+  background-repeat: repeat-x;
+  margin-top: 30px;
+  padding-top: 40px;
+}
 
 .container-fluid{
   background: -webkit-linear-gradient(-45deg, white 25%, #f5dae7 25%, #f5dae7 50%, white 50%, white 75%, #f5dae7 75%);
@@ -116,36 +123,16 @@ body {
   width:100%;
   min-height:100%;
   position:relative;
-  padding-top:50px;
+  padding-top:120px;
 }
 #home {
 }
 #proposal {
   &.big-logo-row{
     margin-bottom:20px;
-
-  }
-  &.fullsize{
-    padding-top:0px;
   }
 }
-#rsvp{
-  background:white;
 
-
-}
-#gifts{
-
-  background:white;
-}
-#gallery{
-
-  background:white;
-}
-#insta{
-
-  background:white;
-}
 .jumbotron{
   max-width: 800px;
   margin: auto;
@@ -296,7 +283,6 @@ body {
   margin-bottom: 10px;
 }
 
-
 #songs input, #songs textarea {
   width: 100%;
 }
@@ -304,4 +290,28 @@ body {
 #songs label {
   display: block;
   text-align: left;
+}
+
+#gifts p {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+}
+
+#gifts_list {
+  margin: auto;
+}
+
+#gifts_list td {
+  padding: 10px;
+  text-align: left;
+}
+
+#gifts .box {
+  border: 2px solid rgb(245, 218, 231);
+  border-radius: 5px;
+  max-width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  padding-bottom: 20px;
 }

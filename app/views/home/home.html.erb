@@ -1,12 +1,9 @@
 <div class="first">
-  <% if flash[:notice] %>
-    <div id="notice"><%= flash[:notice] %></div>
-  <% end %>
   <%= render :partial => 'layouts/big_logo' %>
 </div>
 
 <div id="home" class="container fullsize home">
-  <h1 class="main-title">~Home~</h1>
+  <h1 class="main-title"></h1>
   <div id="carousels">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
@@ -60,8 +57,7 @@
   </div>
 </div>
 
-<div id="proposal" class="fullsize">
-  <%= render :partial => 'layouts/big_logo' %>
+<div id="proposal" class="fullsize main-section">
   <h1 class="main-title">~The Proposal~</h1>
   <div class="proposal-images">
     <%= image_tag ("Photo10.jpg"),class:"young-img" %>
@@ -97,8 +93,8 @@
     <%= image_tag ("lewismet.png"), class:"where-met" %>
   </div>
 </div>
-<div id="rsvp" class="fullsize">
-  <%= render :partial => 'layouts/big_logo' %>
+
+<div id="rsvp" class="fullsize main-section">
   <h1 class="main-title">~RSVP~</h1>
   <p>
     Please RSVP as soon as possible to:
@@ -114,9 +110,62 @@
   </ul>
 </div>
 
-<div id="songs" class="fullsize">
-  <%= render :partial => 'layouts/big_logo' %>
-  <h1 class="main-title">~Song Request~</h1>
+<div id="gifts" class="fullsize main-section">
+  <h1 class="main-title">~Gift List~</h1>
+  <p>
+    We are just happy you are going to be coming to celebrate our marriage with
+    us, but if you would like to get us a gift we have put together a list of
+    ideas below. We have also opened a John Lewis giftlist for those who prefer
+    something more tangible.
+  </p>
+  <div class="box">
+    <h3>Honeymoon Donation</h3>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="notify_url" value="<%= paypal_payments_url %>">
+      <input type="hidden" name="cmd" value="_donations">
+      <input type="hidden" name="business" value="djbase666@yahoo.com">
+      <input type="hidden" name="item_name" value="Lewis and Gemma Honeymoon Donation">
+      <input type="hidden" name="lc" value="US">
+      <input type="hidden" name="no_note" value="0">
+      <input type="hidden" name="currency_code" value="GBP">
+      <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+  </div>
+  <div class="box">
+    <h3>Gifts</h3>
+    <table id="gifts_list">
+      <% @gifts.each do |gift| %>
+        <tr>
+          <td class="name"><%= gift.name %></td>
+          <td class="amount">
+            <%= number_to_currency gift.amount, unit: "£" %>
+          </td>
+          <td class="buy">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="notify_url" value="<%= paypal_payments_url %>">
+              <input type="hidden" name="cmd" value="_donations">
+              <input type="hidden" name="business" value="djbase666@yahoo.com">
+              <input type="hidden" name="lc" value="US">
+              <input type="hidden" name="amount" value="<%= gift.amount %>">
+              <input type="hidden" name="item_name" value="<%= gift.name %>">
+              <input type="hidden" name="item_number" value="<%= gift.id %>">
+              <input type="hidden" name="currency_code" value="GBP">
+              <input type="hidden" name="no_note" value="0">
+              <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_SM.gif:NonHostedGuest">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+          </td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
+
+<div id="songs" class="fullsize main-section">
+  <h1 class="main-title">~Song Requests~</h1>
   <div id="song_request_thanks" style="display:none">
     <h3>
       Thanks <span id="song_request_thanks_name"></span>...
@@ -145,50 +194,9 @@
   <% end %>
 </div>
 
-<div id="gifts" class="fullsize">
-  <%= render :partial => 'layouts/big_logo' %>
-  <h1 class="main-title">~Gifts~</h1>
+<div id="gallery" class="fullsize main-section">
+  <h1 class="main-title">~Photo Gallery~</h1>
   <p>
-    We are just happy you are going to be coming to celebrate our marriage with
-    us, but if you would like to get us a gift we have put together a list of
-    ideas below. We have also opened a John Lewis giftlist for those who prefer
-    something more tangible.
+    Coming soon!
   </p>
-  <p>
-    —Product list with the ability to select and pay for any of the gifts -
-    connecting to our Paypal account (djbase666@yahoo.com). Buyers need the
-    opportunity (optional) to put their name &amp; a message with their gift
-    purchase. In all cases EXCEPT a honeymoon donation, the item should
-    disappear from the product list (in a similar way to how a retail website
-    would work once stock is sold out)-
-  </p>
-  <p>
-    •	Honeymoon Donation (User specifies the amount. If user specification is
-    not possible then perhaps there will need to be a series of 'products' with different donation amounts, such as:
-        •	Honeymoon Donation (£10)
-        •	Honeymoon Donation (£20)
-        •	Honeymoon Donation (£30)
-        •	Honeymoon Donation (£40)
-        •	Honeymoon Donation (£50)
-        •	Honeymoon Donation (£75)
-        •	Honeymoon Donation (£100)
-        •	Honeymoon Donation (£150)
-        •	Honeymoon Donation (£200)
-
-        •	VIP lounge access at airport for Honeymoon for one of us (£15)
-        •	VIP lounge access at airport for Honeymoon for one of us (£15)
-        •	Luxury transport from airport to our hotel in Ibiza (£40)
-        •	Nice meal on first night of honeymoon (£75)
-
-      </p>
-</div>
-
-<div id="insta" class="fullsize">
-  <%= render :partial => 'layouts/big_logo' %>
-  <h1 class="main-title">~Instagram~</h1>
-</div>
-
-<div id="gallery" class="fullsize">
-  <%= render :partial => 'layouts/big_logo' %>
-  <h1 class="main-title">~Gallery~</h1>
 </div>

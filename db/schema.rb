@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150213154244) do
+ActiveRecord::Schema.define(version: 20150214105740) do
+
+  create_table "gifts", force: true do |t|
+    t.string   "name"
+    t.decimal  "amount",                precision: 8, scale: 2
+    t.string   "paypal_transaction_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "song_requests", force: true do |t|
     t.text     "name"
