@@ -21,8 +21,9 @@
   .navbar-inverse  {
     background: rgba(255, 255, 255, 0.95) !important;
   }
-  #intro .big-logo{
+  .big-logo{
     margin-top:20px;
+    margin-bottom: 20px;
   }
 
 }
@@ -84,6 +85,10 @@
 @media all and (max-width: 450px) {
   .logo{
     width:70%
+  }
+  .big-logo{
+    margin-top:-10px;
+    margin-bottom: 20px;
   }
   .carousel-inner {
     margin: auto;
