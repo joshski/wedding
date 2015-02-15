@@ -197,20 +197,28 @@ body {
   color: rgb(232, 174, 202);
   padding-bottom:20px;
 }
+
 .proposal-images{
   max-width:900px;
   padding-top: 50px;
   margin:auto;
 }
+.proposal-images div{
+  display: inline-block;
+}
+.proposal-images img {
+  width:300px;
+  height:445px;
+  border-radius:10px;
+}
+.heart {
+  height: 445px;
+}
 .fa-heart{
   font-size: 18em;
   color: rgb(211, 50, 126);
   padding:20px;
-}
-.young-img{
-  width:300px;
-  height:445px;
-  border-radius:10px;
+  vertical-align: middle;
 }
 .small-logo-container{
   display:inline-block;
