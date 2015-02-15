@@ -127,4 +127,25 @@
     height: 14px;
     background-size: 11px 14px;
   }
+
+  #gifts p, #gifts .box { max-width: 90% }
+  .jumbotron {
+    p {
+      font-size: 1.1em;
+    }
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .container-fluid {
+    min-height: 220px;
+    margin-top: 50px;
+  }
+  p {
+    max-width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .proposed-here {
+    padding-left: 50%;
+  }
 }

@@ -67,11 +67,11 @@
     <%= image_tag ("Photo11.jpg"),class:"young-img" %>
   </div>
   <div class="jumbotron">
-    <h1>Lewis</h1>
     <p>
       Lewis proposed to Gemma in Cape Town on Signal Hill. This is otherwise
       known as the 'Lion's Rump'. Take a look at the picture below and you'll
       see what we mean. It is quite apt considering they are both Leos.
+    </p>
     <p>
       Lewis chose Cape Town because Gemma grew up in the city. Her parents also live there.
       Lewis woke Gemma up on the day having told her to expect a day trip
@@ -87,7 +87,7 @@
       on one knee (got to capture the moment).
     </p>
     <div class="center">
-      <p>
+      <p class="proposed-here">
         Lew proposed here!<br>
         <i class="fa fa-long-arrow-down"></i>
       </p>
@@ -115,10 +115,15 @@
 <div id="gifts" class="fullsize main-section">
   <h1 class="main-title">~Gift List~</h1>
   <p>
-    We are just happy you are going to be coming to celebrate our marriage with
-    us, but if you would like to get us a gift we have put together a list of
-    ideas below. We have also opened a John Lewis giftlist for those who prefer
-    something more tangible.
+    We are happy just to be able to celebrate our marriage with you but if you
+    would like to give us a wedding present we would really appreciate donations
+    towards our dream honeymoon. If you do make a donation, please include your
+    name in the comments box to make sure we can thank you.
+  </p>
+  <p>
+    We have also opened a John Lewis gift list in case you would prefer
+    something more tangible. Details of the gift list will be on this page from
+    the 1st March as this is the earliest that John Lewis will let us open it.
   </p>
   <div class="box">
     <h3>Honeymoon Donation</h3>
@@ -134,35 +139,6 @@
       <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
       <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
     </form>
-  </div>
-  <div class="box">
-    <h3>Gifts</h3>
-    <table id="gifts_list">
-      <% @gifts.each do |gift| %>
-        <tr>
-          <td class="name"><%= gift.name %></td>
-          <td class="amount">
-            <%= number_to_currency gift.amount, unit: "£" %>
-          </td>
-          <td class="buy">
-            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-              <input type="hidden" name="notify_url" value="<%= paypal_payments_url %>">
-              <input type="hidden" name="cmd" value="_donations">
-              <input type="hidden" name="business" value="djbase666@yahoo.com">
-              <input type="hidden" name="lc" value="US">
-              <input type="hidden" name="amount" value="<%= gift.amount %>">
-              <input type="hidden" name="item_name" value="<%= gift.name %>">
-              <input type="hidden" name="item_number" value="<%= gift.id %>">
-              <input type="hidden" name="currency_code" value="GBP">
-              <input type="hidden" name="no_note" value="0">
-              <input type="hidden" name="bn" value="PP-DonationsBF:btn_donate_SM.gif:NonHostedGuest">
-              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-            </form>
-          </td>
-        </tr>
-      <% end %>
-    </table>
   </div>
 </div>
 

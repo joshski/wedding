@@ -1,7 +1,5 @@
-
-
-$(function() {
-
+function confetti() {
+  $(".sparkle-canvas").remove();
 
   $("h1").sparkleh({
     color: "rainbow",
@@ -9,8 +7,6 @@ $(function() {
     overlap: 10
   });
 
-
-  // here we create fuscia sparkles
   $("h1").sparkleh({
     count: 20,
     color: ["#ff0080","#ff0080","#0000FF"]
@@ -24,12 +20,15 @@ $(function() {
     count: 100,
     color: ["#ff0080","#ff0080","#3901FF"]
   });
+}
+
+$(confetti);
+
+var resizeTimeout = null;
+$(window).on('resize', function() {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(confetti, 200);
 });
-
-
-
-
-
 
 
 $.fn.sparkleh = function( options ) {
