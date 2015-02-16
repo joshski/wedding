@@ -79,14 +79,14 @@ body {
   text-align: center;
 }
 
-.main-section {
-  background: linear-gradient(-45deg, white 25%, #f5dae7 25%, #f5dae7 50%, white 50%, white 75%, #f5dae7 75%);
-  background-size: 100px 100px;
-  background-repeat: repeat-x;
-  margin-top: 30px;
-  padding-bottom: 40px;
-  padding-top:120px;
-}
+// .main-section {
+//   background: linear-gradient(-45deg, white 25%, #f5dae7 25%, #f5dae7 50%, white 50%, white 75%, #f5dae7 75%);
+//   background-size: 100px 100px;
+//   background-repeat: repeat-x;
+//   margin-top: 30px;
+//   padding-bottom: 40px;
+//   padding-top:120px;
+// }
 
 .container-fluid{
   background: linear-gradient(-45deg, white 25%, #f5dae7 25%, #f5dae7 50%, white 50%, white 75%, #f5dae7 75%);
@@ -238,7 +238,7 @@ body {
   margin: auto;
   background: white;
   padding: 15px;
-  max-width: 550px;
+  max-width: 500px;
 }
 .gemma{
   font-size: 53px;
@@ -284,10 +284,20 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.navbar-inverse .navbar-nav > li > a {
+color: #d2327e;
+&:hover {
+  background-color: #d2327e;
+  color: white;
+
+
+}
+}
 .getting{
   font-size: 8px;
   color: white;
   display: inline-block;
+  text-align:center;
   width: 70px;
   height: 20px;
   padding-top: 5px;
