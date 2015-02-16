@@ -1,6 +1,10 @@
 class HomeController < ApplicationController
   def home
-    @song_request = SongRequest.new
+  end
+  def gifts
     @gifts = Gift.all.order(:amount)
+  end
+  def songs
+    @song_request = SongRequest.new
   end
 end

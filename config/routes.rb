@@ -7,6 +7,9 @@ Wedding::Application.routes.draw do
 
 
   match '/proposal',    to: 'home#proposal',   via: 'get'
-  match '/contacts', to: 'contacts#new', via: 'get'
+  match '/gallery', to: 'home#gallery', via: 'get'
+  match '/rsvp',    to: 'home#rsvp',   via: 'get'
+  match '/songs', to: 'home#songs', via: 'get'
+  match '/gifts', to: 'home#gifts', via: 'get'
 
 end

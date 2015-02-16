@@ -13,17 +13,16 @@
     </div>
     <div class="navbar-collapse collapse"id="navbarLinks">
       <ul class="nav navbar-nav navbar-left" >
-        <li>
-          <%= link_to 'Proposal', proposal_path %></li>
-        <li><a href="#rsvp" onclick="smoothScroll(this)">RSVP</a></li>
-        <li><a href="#gifts" onclick="smoothScroll(this)">Gift List</a></li>
+        <li><%= link_to 'Proposal', proposal_path %></li>
+        <li><%= link_to 'RSVP', rsvp_path %></a></li>
+        <li><%= link_to 'Gifts', gifts_path %></a></li>
       </ul>
       <div class="small-logo-container">
         <a class="small-logo" href="#"><%=image_tag('logo.png',class:"small-logo-img") %></a>
       </div>
       <ul class="nav navbar-nav navbar-right" >
-        <li><a href="#songs" onclick="smoothScroll(this)">Song Requests</a></li>
-        <li><a href="#gallery" onclick="smoothScroll(this)">Photo Gallery</a></li>
+        <li><%= link_to 'Song Requests', songs_path %></a></li>
+        <li><%= link_to 'Gallery', gallery_path %></a></li>
       </ul>
     </div><!--/.nav-collapse -->
 
