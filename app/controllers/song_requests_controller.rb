@@ -1,13 +1,11 @@
   class SongRequestsController < ApplicationController
   def create
     song_request= SongRequest.create(song_request_params)
-    if song_request
+    if song_request.valid?
       flash[:notice] = "Thanks #{params[:song_request][:name]}!"
-      binding.pry
     else
       @errors = song_request.errors
     end
-
     unless request.xhr?
       redirect_to root_path
     end

@@ -22,13 +22,16 @@
       </div>
     <%= form_for @song_request, remote:true do |f| %>
       <div class="field">
-        <%= f.text_area :name,placeholder:"Your name?" %>
+        <%= f.label :name, "Your name?" %>
+        <%= f.text_area :name %>
       </div>
       <div class="field">
-        <%= f.text_area :song_name,placeholder:"Your favourite songs?"  %>
+        <%= f.label :song_name, "Which song(s) would you like to hear?" %>
+        <%= f.text_area :song_name  %>
       </div>
       <div class="field">
-        <%= f.text_area :content,placeholder:"Anything else?"  %>
+        <%= f.label :content, "Anything else?" %>
+        <%= f.text_area :content  %>
       </div>
       <div>
         <%= f.submit "Send to the DJ", class: "btn btn-primary" %>
