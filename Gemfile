@@ -8,6 +8,8 @@ gem "font-awesome-rails"
 group :development do
   gem 'spring'
   gem 'sqlite3'
+  gem 'pry'
+
 end
 
 # Use ActiveModel has_secure_password

@@ -1,3 +1,6 @@
-$("#song_request_thanks_name").html($("#song_request_name").val());
-$("#song_request_thanks").fadeIn();
-$("#song_request_song_name, #song_request_content").val("")
+<% if @errors.present? %>
+   alert("Please try again")
+   <% else %>
+   
+   $("#song_request_thanks").fadeIn();
+<% end %>
