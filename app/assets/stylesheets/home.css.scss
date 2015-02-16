@@ -163,11 +163,15 @@ body {
 background-size: 100px 100px;
   padding-left: 60px;
   padding-right: 60px;
-  border-radius:2px;
+  border-radius:10px;
   color:white;
   p {
     margin: auto;
     margin-top: 30px;
+    font-family: 'Cardo', serif;
+margin: 10px;
+margin-bottom: 50px;
+margin-top: 50px;
   }
 }
 .text-div{
@@ -338,11 +342,14 @@ color: #d2327e;
 #songs input, #songs textarea {
   width: 100%;
   border: 1px solid #E8AECA;
+  background:transparent
 }
 
 #songs input[type=submit] {
   border: none;
   margin-top: 20px;
+  margin-bottom: 50px;
+
 }
 
 #songs label {
@@ -352,7 +359,6 @@ color: #d2327e;
 
 #songs p {
   margin: auto;
-  margin-bottom: 20px;
 }
 
 #gifts p {
@@ -365,7 +371,7 @@ color: #d2327e;
 #gallery p {
   max-width: 420px;
   margin: auto;
-  margin-bottom: 50px;
+
 }
 
 #gifts_list {
@@ -435,4 +441,24 @@ color: #d2327e;
     0% { opacity: 1.0; }
     50% { opacity: 0.0; }
     100% { opacity: 1.0; }
+}
+button, input, optgroup, select, textarea {
+color: rgb(245, 218, 231);
+min-height:50px;
+max-width:250px;
+padding-left:15px;
+padding-top:25px;
+border-radius:5px;
+font-family: 'Dancing Script', cursive;
+font-size: 1.5em;
+}
+.btn-primary{
+  border: 1px solid #E8AECA !important;
+  font-size:2em;
+  font-weight:100;
+  &:hover{
+    background:#f5dae7 !important;
+    color:white;
+
+  }
 }

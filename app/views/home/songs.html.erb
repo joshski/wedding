@@ -1,37 +1,39 @@
 <%= render :partial => 'layouts/big_logo' %>
 <div id="songs" class="fullsize main-section">
-  <h1 class="main-title">~Song Requests~</h1>
-  <p class="center">
-    We hope that everyone hears at least one record they love on the day.
-  </p>
+  <div class="jumbotron">
+    <h1 class="main-title">~Song Requests~</h1>
+    <div class="text-div">
+      <p class="center">
+        We hope that everyone hears at least one record they love on the day.
+      </p>
 
-  <p>
-    Please complete the form below to give us your top three.
-  </p>
+      <p>
+        Please complete the form below to give us your top three.
+      </p>
 
-  <div id="song_request_thanks" style="display:none">
-    <h3>
-      Thanks <span id="song_request_thanks_name"></span>.
-    </h3>
-    <p>
-      You can request as many songs as you like...
-    </p>
+      <div id="song_request_thanks" style="display:none">
+        <h3>
+          Thanks <span id="song_request_thanks_name"></span>.
+        </h3>
+        <p>
+          You can request as many songs as you like...
+        </p>
+      </div>
+    <%= form_for @song_request, remote:true do |f| %>
+      <div class="field">
+        <%= f.text_area :name,placeholder:"Your name?" %>
+      </div>
+      <div class="field">
+        <%= f.text_area :song_name,placeholder:"Your favourite songs?"  %>
+      </div>
+      <div class="field">
+        <%= f.text_area :content,placeholder:"Anything else?"  %>
+      </div>
+      <div>
+        <%= f.submit "Send to the DJ", class: "btn btn-primary" %>
+      </div>
+    <% end %>
   </div>
-  <%= form_for @song_request, remote:true do |f| %>
-    <div class="field">
-      <%= f.label :name, "Your Name" %>
-      <%= f.text_field :name %>
-    </div>
-    <div class="field">
-      <%= f.label :song_name, "Your favourite songs" %>
-      <%= f.text_area :song_name %>
-    </div>
-    <div class="field">
-      <%= f.label :content, "Anything else?" %>
-      <%= f.text_area :content %>
-    </div>
-    <div>
-      <%= f.submit "Send to the DJ", class: "btn btn-primary" %>
-    </div>
-  <% end %>
+</div>
+
 </div>

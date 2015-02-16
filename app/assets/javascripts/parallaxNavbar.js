@@ -24,7 +24,7 @@ if ($(window).width() > 1024) {
     $('.navbar').css({"background-color": navBackColor});
 
     var shadowOpacity = navOpacity * 0.4;
-    if ( ySmall > 4) {
+    if ( ySmall > 7) {
       $('.navbar').css({"box-shadow": "0 2px 1px rgba(0,0,0," + shadowOpacity + ")"});
     } else {
       $('.navbar').css({"box-shadow": "none"});
