@@ -153,14 +153,12 @@ body {
 
   text-shadow: 1px 1px #CF87A9;
 
-
   max-width: 800px;
   margin: auto;
   margin-top:50px;
   margin-bottom:50px;
   opacity:0.95;
-  background: linear-gradient(-45deg, grey 25%, #f5dae7 25%, #f5dae7 50%, grey 50%, grey 75%, #f5dae7 75%);
-  background-size: 100px 100px;
+  background: #F567AB;
   padding-left: 60px;
   padding-right: 60px;
   border-radius:10px;
@@ -171,7 +169,7 @@ body {
   }
 }
 .text-div{
-  background: rgba(128, 128, 128, 0.93);
+  // background: rgba(128, 128, 128, 0.93);
   padding: 20px;
   border-radius: 10px;
 }
@@ -338,7 +336,7 @@ body {
 #songs input, #songs textarea {
   width: 100%;
   border: 1px solid #E8AECA;
-  background:transparent
+  background: #F567AB;
 }
 
 #songs input[type=submit] {
