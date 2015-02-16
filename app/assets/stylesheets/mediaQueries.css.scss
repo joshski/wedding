@@ -10,6 +10,9 @@
   .hidden{
     display:none;
   }
+  .main-section {
+    min-height:100vh;
+  }
 }
 
 
@@ -96,9 +99,9 @@
     border: 3px dashed #d2307d;
 
   }
-  .small-logo-container{
-    display:block;
-  }
+  // .small-logo-container{
+  //   display:block;
+  // }
   .carousel-inner img {
     max-height: inherit;
   }

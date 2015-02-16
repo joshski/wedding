@@ -12,14 +12,15 @@
     </div>
     <div class="navbar-collapse collapse"id="navbarLinks">
       <ul class="nav navbar-nav navbar-left" >
+        <li class="<%=is_active('home')%>"><%= link_to 'Home', root_path %></a></li>
         <li class="<%=is_active('proposal')%>"><%= link_to 'Proposal', proposal_path %></li>
         <li class="<%=is_active('rsvp')%>"><%= link_to 'RSVP', rsvp_path %></a></li>
-        <li class="<%=is_active('gifts')%>"><%= link_to 'Gifts', gifts_path %></a></li>
       </ul>
       <div class="small-logo-container">
         <a class="small-logo" href="<%= root_path %>"><%=image_tag('logo.png',class:"small-logo-img") %></a>
       </div>
       <ul class="nav navbar-nav navbar-right" >
+        <li class="<%=is_active('gifts')%>"><%= link_to 'Gifts', gifts_path %></a></li>
         <li class="<%=is_active('songs')%>"><%= link_to 'Song Requests', songs_path %></a></li>
         <li class="<%=is_active('gallery')%>"><%= link_to 'Gallery', gallery_path %></a></li>
       </ul>

@@ -3,6 +3,6 @@ $(window).scroll(function(){
   if (width > 1024) {
     var body = $('body');
     var top = $(this).scrollTop();
-    $('#first .big-logo-row').css('top', top / 2);
+    $('.container-fluid.big-logo-row').css('top', top / 2);
   }
 });
