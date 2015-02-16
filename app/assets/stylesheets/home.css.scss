@@ -450,12 +450,12 @@ body {
     100% { opacity: 1.0; }
   }
   button, input, optgroup, select, textarea {
-    color: rgb(245, 218, 231);
-    min-height:50px;
-    max-width:250px;
-    padding-left:15px;
-    padding-top:25px;
-    border-radius:5px;
+    color: #f5dae7;
+    min-height: 20px;
+    max-width: 250px;
+    padding-left: 15px;
+    /* padding-top: 25px; */
+    border-radius: 5px;
     font-size: 1.5em;
   }
   .btn-primary{

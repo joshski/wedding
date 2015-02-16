@@ -15,3 +15,10 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+document.addEventListener('page:change', function() {
+  $('.main-section').addClass('animated fadeIn');
+});
+
+document.addEventListener('page:fetch', function() {
+  $('.main-section').addClass('animated fadeOut');
+});
