@@ -158,9 +158,9 @@ body {
   margin: auto;
   margin-top:50px;
   margin-bottom:50px;
-
+  opacity:0.95;
   background: linear-gradient(-45deg, grey 25%, #f5dae7 25%, #f5dae7 50%, grey 50%, grey 75%, #f5dae7 75%);
-background-size: 100px 100px;
+  background-size: 100px 100px;
   padding-left: 60px;
   padding-right: 60px;
   border-radius:10px;
@@ -168,10 +168,6 @@ background-size: 100px 100px;
   p {
     margin: auto;
     margin-top: 30px;
-    font-family: 'Cardo', serif;
-margin: 10px;
-margin-bottom: 50px;
-margin-top: 50px;
   }
 }
 .text-div{
@@ -205,7 +201,7 @@ margin-top: 50px;
 .navbar-nav{
   font-weight:100;
   font-size: 1.5em;
-font-family: 'Dancing Script', cursive;
+  font-family: 'Dancing Script', cursive;
 }
 .main-title{
   font-size:3em;
@@ -302,13 +298,13 @@ font-family: 'Dancing Script', cursive;
   background-repeat: no-repeat;
 }
 .navbar-inverse .navbar-nav > li > a {
-color: #d2327e;
-&:hover {
-  background-color: #d2327e;
-  color: white;
+  color: #d2327e;
+  &:hover {
+    background-color: #d2327e;
+    color: white;
 
 
-}
+  }
 }
 .getting{
   font-size: 8px;
@@ -359,106 +355,129 @@ color: #d2327e;
 
 #songs p {
   margin: auto;
-}
+  font-family: 'Cardo', serif;
+  margin: 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;}
 
-#gifts p {
-  max-width: 600px;
-  margin: auto;
-  text-align: left;
-  margin-bottom: 20px;
-}
+  #gifts p {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 20px;
+  }
 
-#gallery p {
-  max-width: 420px;
-  margin: auto;
+  #gallery p {
+    max-width: 420px;
+    margin: auto;
 
-}
+  }
 
-#gifts_list {
-  margin: auto;
-}
+  #gifts_list {
+    margin: auto;
+  }
 
-#gifts_list td {
-  padding: 10px;
-  text-align: left;
-  vertical-align: center;
-}
+  #gifts_list td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: center;
+  }
 
-#gifts_list form {
-  margin: 0;
-  padding: 0;
-  height: 21px;
-}
+  #gifts_list form {
+    margin: 0;
+    padding: 0;
+    height: 21px;
+  }
 
-#gifts .box {
-  border: 2px solid rgb(245, 218, 231);
-  border-radius: 5px;
-  max-width: 600px;
-  margin: auto;
-  margin-top: 20px;
-  padding-bottom: 20px;
-}
+  #gifts .box {
+    border: 2px solid rgb(245, 218, 231);
+    border-radius: 5px;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
 
-.navbar-nav > .active > a:focus {
-  background-color: transparent;
-}
+  .navbar-nav > .active > a:focus {
+    background-color: transparent;
+  }
 
-.proposed-here {
-  padding-left: 365px;
-  font-size: 2.5em !important;
-  color: #6B1111;
+  .proposed-here {
+    padding-left: 365px;
+    font-size: 2.5em !important;
+    color: #6B1111;
 
-}
-.fa-long-arrow-down{
-  -webkit-animation-name: blinker;
-    -webkit-animation-duration: 1s;
+  }
+  .fa-long-arrow-down{
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 2s;
     -webkit-animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
 
     -moz-animation-name: blinker;
-    -moz-animation-duration: 1s;
+    -moz-animation-duration: 2s;
     -moz-animation-timing-function: linear;
     -moz-animation-iteration-count: infinite;
 
     animation-name: blinker;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-}
-@-moz-keyframes blinker {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-}
-
-@-webkit-keyframes blinker {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-}
-
-@keyframes blinker {
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-}
-button, input, optgroup, select, textarea {
-color: rgb(245, 218, 231);
-min-height:50px;
-max-width:250px;
-padding-left:15px;
-padding-top:25px;
-border-radius:5px;
-font-family: 'Dancing Script', cursive;
-font-size: 1.5em;
-}
-.btn-primary{
-  border: 1px solid #E8AECA !important;
-  font-size:2em;
-  font-weight:100;
-  &:hover{
-    background:#f5dae7 !important;
-    color:white;
-
   }
-}
+  .paypal{
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  @-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+
+  @-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+
+  @keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  button, input, optgroup, select, textarea {
+    color: rgb(245, 218, 231);
+    min-height:50px;
+    max-width:250px;
+    padding-left:15px;
+    padding-top:25px;
+    border-radius:5px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+  }
+  .btn-primary{
+    border: 1px solid #E8AECA !important;
+    font-size:2em;
+    font-weight:100;
+    &:hover{
+      background:#f5dae7 !important;
+      color:white;
+
+    }
+  }
+  a {
+    color: #B0D8FA;
+    text-decoration: none;
+  }
