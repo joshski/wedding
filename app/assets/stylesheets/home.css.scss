@@ -150,23 +150,31 @@ body {
 }
 
 .jumbotron{
+
+  text-shadow: 1px 1px #CF87A9;
+
+
   max-width: 800px;
   margin: auto;
   margin-top:50px;
   margin-bottom:50px;
 
-  background: #F567AB;
-  color:white;
-  text-shadow: 1px 1px #CF87A9;
+  background: linear-gradient(-45deg, grey 25%, #f5dae7 25%, #f5dae7 50%, grey 50%, grey 75%, #f5dae7 75%);
+background-size: 100px 100px;
   padding-left: 60px;
   padding-right: 60px;
   border-radius:2px;
+  color:white;
   p {
     margin: auto;
     margin-top: 30px;
   }
 }
-
+.text-div{
+  background: rgba(128, 128, 128, 0.93);
+  padding: 20px;
+  border-radius: 10px;
+}
 .carousel-inner {
   margin: auto;
   width: 300px;
@@ -190,11 +198,16 @@ body {
   color: rgb(210, 50, 126);
 
 }
+.navbar-nav{
+  font-weight:100;
+  font-size: 1.5em;
+font-family: 'Dancing Script', cursive;
+}
 .main-title{
   font-size:3em;
   font-family:cursive;
   text-align:center;
-  color: rgb(232, 174, 202);
+  color: #D3327E;
   padding-bottom:20px;
 }
 
@@ -386,4 +399,40 @@ color: #d2327e;
 
 .proposed-here {
   padding-left: 365px;
+  font-size: 2.5em !important;
+  color: #6B1111;
+
+}
+.fa-long-arrow-down{
+  -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@-moz-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
 }
