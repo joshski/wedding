@@ -456,12 +456,13 @@ body {
     padding-left:15px;
     padding-top:25px;
     border-radius:5px;
-    font-family: 'Dancing Script', cursive;
     font-size: 1.5em;
   }
   .btn-primary{
     border: 1px solid #E8AECA !important;
     font-size:2em;
+    font-family: 'Dancing Script', cursive;
+
     font-weight:100;
     &:hover{
       background:#f5dae7 !important;
