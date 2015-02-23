@@ -6,20 +6,26 @@
 
   <div class="jumbotron">
     <div class="text-div">
-      <p class="center">
-        We hope that everyone hears at least one record they love on the day.
-      </p>
+      <div id="request_title">
+        <p class="center">
+          We hope that everyone hears at least one record they love on the day.
+        </p>
 
-      <p>
-        Please complete the form below to give us your top three.
-      </p>
+        <p>
+          Please complete the form below to give us your top three.
+        </p>
+      </div>
 
       <div id="song_request_thanks" style="display:none">
         <h3>
-          Thanks <span id="song_request_thanks_name"></span>.
+          Thanks You.
         </h3>
         <p>
           You can request as many songs as you like...
+
+          <div class="btn btn-primary" onclick="showSongForm()">
+            Add Another Song
+          </div>
         </p>
       </div>
     <%= form_for @song_request, remote:true do |f| %>
@@ -41,5 +47,11 @@
     <% end %>
   </div>
 </div>
+<script charset="utf-8">
+  function showSongForm(){
+    $("#new_song_request").fadeIn();
+    $("#song_request_thanks").hide();
+    $("#request_title").fadeIn();
 
-</div>
+  }
+</script>

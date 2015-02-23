@@ -1,5 +1,9 @@
 <% if @errors.present? %>
    alert("Please add your name and song choices")
 <% else %>
-   $("#song_request_thanks").fadeIn();
+  $("#new_song_request").hide();
+  $("#request_title").hide();
+
+  $('#new_song_request').trigger("reset");
+  $("#song_request_thanks").fadeIn();
 <% end %>
