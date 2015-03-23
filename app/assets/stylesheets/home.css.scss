@@ -487,8 +487,19 @@ body {
   }
 
 
+#gallery_slideshow {
+
+  margin: auto;
+}
+
 #gallery_slideshow iframe {
   width: 640px;
   height: 480px;
+  max-width: 100%;
+}
+
+canvas {
+  max-width: 100%;
   margin: auto;
+  box-sizing: border-box;
 }

@@ -155,4 +155,10 @@
   .proposed-here {
     padding-left: 50%;
   }
+
+  #gallery_slideshow iframe {
+    width: 400px;
+    height: 300px;
+    max-width: 100%;
+  }
 }
